@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Animated title  -->
+    <title id="animated-title"> </title> <!-- Empty initially -->
+    <!-- CSS link  -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <!-- Animated background  -->
+    <div class="background-animation"></div>
+    <!-- Animated Heading  -->
+    <h2 id="animated-heading"></h2>
+
+    <p>Press <b class="morse-help">SPACE</b> for Morse input [ <b class="morse-help">tap for dot(.), hold for
+            dash(-)</b> ].</p>
+    <p style="margin-bottom: 20px;"><b class="morse-help">Pause</b> to translate, <b class="morse-help">Backspace</b> to
+        delete, <b class="morse-help">Enter</b> for space. <b class="morse-help">$</b> means wrong Morse input.</p>
+
+    <div class="container">
+        <div id="morse"></div>
+        <div id="suggestion"></div>
+        <div id="output"></div>
+        <button onclick="clearText()">Clear text</button>
+        <button onclick="toggleHelp()">Need Help?</button>
+
+        <!-- need help part -->
+        <div id="help">
+            <p>Alphabets:</p>
+            <p><b>A</b>: <span class="morse-help">.-</span> &nbsp; <b>B</b>: <span class="morse-help">-...</span> &nbsp;
+                <b>C</b>: <span class="morse-help">-.-.</span> &nbsp; <b>D</b>: <span class="morse-help">-..</span>
+            </p>
+            <p><b>E</b>: <span class="morse-help">.</span> &nbsp; <b>F</b>: <span class="morse-help">..-.</span> &nbsp;
+                <b>G</b>: <span class="morse-help">--.</span> &nbsp; <b>H</b>: <span class="morse-help">....</span>
+            </p>
+            <p><b>I</b>: <span class="morse-help">..</span> &nbsp; <b>J</b>: <span class="morse-help">.---</span> &nbsp;
+                <b>K</b>: <span class="morse-help">-.-</span> &nbsp; <b>L</b>: <span class="morse-help">.-..</span>
+            </p>
+            <p><b>M</b>: <span class="morse-help">--</span> &nbsp; <b>N</b>: <span class="morse-help">-.</span> &nbsp;
+                <b>O</b>: <span class="morse-help">---</span> &nbsp; <b>P</b>: <span class="morse-help">.--.</span>
+            </p>
+            <p><b>Q</b>: <span class="morse-help">--.-</span> &nbsp; <b>R</b>: <span class="morse-help">.-.</span>
+                &nbsp; <b>S</b>: <span class="morse-help">...</span> &nbsp; <b>T</b>: <span class="morse-help">-</span>
+            </p>
+            <p><b>U</b>: <span class="morse-help">..-</span> &nbsp; <b>V</b>: <span class="morse-help">...-</span>
+                &nbsp; <b>W</b>: <span class="morse-help">.--</span> &nbsp; <b>X</b>: <span
+                    class="morse-help">-..-</span></p>
+            <p><b>Y</b>: <span class="morse-help">-.--</span> &nbsp; <b>Z</b>: <span class="morse-help">--..</span></p>
+            <p>Numbers:</p>
+            <p><b>0</b>: <span class="morse-help">-----</span> &nbsp; <b>1</b>: <span class="morse-help">.----</span>
+                &nbsp; <b>2</b>: <span class="morse-help">..---</span> &nbsp; <b>3</b>: <span
+                    class="morse-help">...--</span></p>
+            <p><b>4</b>: <span class="morse-help">....-</span> &nbsp; <b>5</b>: <span class="morse-help">.....</span>
+                &nbsp; <b>6</b>: <span class="morse-help">-....</span> &nbsp; <b>7</b>: <span
+                    class="morse-help">--...</span></p>
+            <p><b>8</b>: <span class="morse-help">---..</span> &nbsp; <b>9</b>: <span class="morse-help">----</span></p>
+            <p>Punctuations:</p>
+            <p><b>Colon</b>: <span class="morse-help">---...</span> &nbsp; <b>Comma</b>: <span
+                    class="morse-help">--..--</span></p>
+            <p><b>Semicolon</b>: <span class="morse-help">-.-.-.</span> &nbsp;
+
+        </div>
+
+    </div>
+
+    <!-- javascript link  -->
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
