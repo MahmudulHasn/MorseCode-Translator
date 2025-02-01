@@ -1,0 +1,148 @@
+body {
+    background-color: #121212;
+    color: #fff;
+    /* font-family: 'Arial', sans-serif; */
+    font-family: cursive;
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+
+    font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    margin-left: -10px;
+}
+
+p {
+    font-size: 16px;
+    color: #bbb;
+    margin: 5px 0;
+}
+
+.container {
+    opacity: 0.7;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 12px;
+    background: #1e1e1e;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border: 1px solid #ffc80044;
+}
+#morse,
+#output,
+#suggestion {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    display: inline-block;
+    min-height: 30px;
+    width: 80%;
+    transition: 0.3s;
+}
+
+#morse {
+    font-size: 22px;
+    color: #ffcc00;
+    background: #222;
+    margin-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+#suggestion {
+    font-size: 18px;
+    color: #ffffff;
+    /* font-style: italic; */
+    background: #333;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+#output {
+    font-size: 20px;
+    color: #ffd103;
+    font-weight: bold;
+    background: #444;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+button {
+    font-weight: bold;
+    background: #444;
+    color: #ffc800;
+    font-size: 16px;
+    border: none;
+    padding: 10px 20px;
+    margin: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+button:hover {
+    background: #ffcb0f;
+    color: #fff;
+
+}
+
+#help {
+    display: none;
+    background: #333;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+#help b {
+    color: #888;
+    font-size: 14px;
+}
+
+.morse-help {
+    color: #ffcc00;
+    /* Yellow for Morse code */
+    font-weight: bold;
+}
+
+/* Background animation */
+.background-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.dot,
+.dash {
+    position: absolute;
+    font-size: 24px;
+    color: rgba(255, 204, 0, 0.7);
+    animation: float 5s infinite ease-in-out;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px) scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(150px) scale(1.2);
+        opacity: 0.6;
+    }
+
+    100% {
+        transform: translateY(300px) scale(0.8);
+        opacity: 0;
+    }
+}
