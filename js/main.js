@@ -65,7 +65,7 @@ document.addEventListener("keyup", function (event) {
 });
 
 function updateSuggestion() {
-    suggestionDiv.innerText = morseDict[morseInput] ? `Did you mean: ${morseDict[morseInput]}?` : "";
+    suggestionDiv.innerText = morseDict[morseInput] ? `Did you mean: ${morseDict[morseInput]} ?` : "";
 }
 
 function clearText() {
@@ -134,7 +134,7 @@ function animateMorseText(element, text) {
                 element.textContent = element.textContent.slice(0, -morse.length) + char;
                 index++;
                 setTimeout(showNextLetter, 200); // Move to the next letter
-            }, 500); // Time Morse code is visible
+            }, 300); // Time Morse code is visible
         }
     }
     showNextLetter();
