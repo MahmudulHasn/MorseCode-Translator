@@ -1,8 +1,7 @@
 body {
     background-color: #121212;
     color: #fff;
-    /* font-family: 'Arial', sans-serif; */
-    font-family: cursive;
+    font-family: 'Arial', sans-serif;
     text-align: center;
     padding: 20px;
 }
@@ -21,6 +20,7 @@ h2 {
 }
 
 p {
+    font-family: cursive;
     font-size: 16px;
     color: #bbb;
     margin: 5px 0;
