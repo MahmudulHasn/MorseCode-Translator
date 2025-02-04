@@ -26,34 +26,47 @@
         <div id="suggestion"></div>
         <div id="output"></div>
 
+        <!-- for small screen view start -->
         <div id="morse-keyboard" class="hidden">
-            <button style="background-color:#ffcb0f; color: #fff;" onclick="addMorse()">Spacebar</button>
+            <button class="spacebar-btn">Spacebar</button>
             <button onclick="enter()">Enter</button>
             <button onclick="backspace()">⌫</button>
         </div>
+        <!-- for small screen view end -->
 
-        <button onclick="clearText()">Clear text</button>
-        <button onclick="toggleHelp()">Need Help?</button>
+        <div class="clr-help-btn">
+            <button onclick="clearText()">Clear text</button>
+            <button onclick="toggleHelp()">Need Help?</button>
+        </div>
 
         <!-- need help part -->
         <div id="help">
             <p>Alphabets:</p>
 
-            <p> <b>A</b>: <span class="morse-help">.-</span> &nbsp; <b>B</b>: <span class="morse-help">-...</span> &nbsp;
-                <b>C</b>: <span class="morse-help">-.-.</span> &nbsp; <b>D</b>: <span class="morse-help">-..</span> &nbsp;
+            <p> <b>A</b>: <span class="morse-help">.-</span> &nbsp; <b>B</b>: <span class="morse-help">-...</span>
+                &nbsp;
+                <b>C</b>: <span class="morse-help">-.-.</span> &nbsp; <b>D</b>: <span class="morse-help">-..</span>
+                &nbsp;
                 <b>E</b>: <span class="morse-help">.</span> &nbsp; <b>F</b>: <span class="morse-help">..-.</span> &nbsp;
             </p>
-            <p> <b>G</b>: <span class="morse-help">--.</span> &nbsp; <b>H</b>: <span class="morse-help">....</span> &nbsp;
-                <b>I</b>: <span class="morse-help">..</span> &nbsp; <b>J</b>: <span class="morse-help">.---</span> &nbsp; 
-                <b>K</b>: <span class="morse-help">-.-</span> &nbsp; <b>L</b>: <span class="morse-help">.-..</span> &nbsp;
+            <p> <b>G</b>: <span class="morse-help">--.</span> &nbsp; <b>H</b>: <span class="morse-help">....</span>
+                &nbsp;
+                <b>I</b>: <span class="morse-help">..</span> &nbsp; <b>J</b>: <span class="morse-help">.---</span>
+                &nbsp;
+                <b>K</b>: <span class="morse-help">-.-</span> &nbsp; <b>L</b>: <span class="morse-help">.-..</span>
+                &nbsp;
             </p>
             <p> <b>M</b>: <span class="morse-help">--</span> &nbsp; <b>N</b>: <span class="morse-help">-.</span> &nbsp;
-                <b>O</b>: <span class="morse-help">---</span> &nbsp; <b>P</b>: <span class="morse-help">.--.</span> &nbsp;
-                <b>Q</b>: <span class="morse-help">--.-</span> &nbsp; <b>R</b>: <span class="morse-help">.-.</span> &nbsp;
+                <b>O</b>: <span class="morse-help">---</span> &nbsp; <b>P</b>: <span class="morse-help">.--.</span>
+                &nbsp;
+                <b>Q</b>: <span class="morse-help">--.-</span> &nbsp; <b>R</b>: <span class="morse-help">.-.</span>
+                &nbsp;
             </p>
             <p> <b>S</b>: <span class="morse-help">...</span> &nbsp; <b>T</b>: <span class="morse-help">-</span> &nbsp;
-                <b>U</b>: <span class="morse-help">..-</span> &nbsp; <b>V</b>: <span class="morse-help">...-</span> &nbsp; 
-                <b>W</b>: <span class="morse-help">.--</span> &nbsp; <b>X</b>: <span class="morse-help">-..-</span> &nbsp;
+                <b>U</b>: <span class="morse-help">..-</span> &nbsp; <b>V</b>: <span class="morse-help">...-</span>
+                &nbsp;
+                <b>W</b>: <span class="morse-help">.--</span> &nbsp; <b>X</b>: <span class="morse-help">-..-</span>
+                &nbsp;
             </p>
             <p> <b>Y</b>: <span class="morse-help">-.--</span> &nbsp; <b>Z</b>: <span class="morse-help">--..</span></p>
 
@@ -77,6 +90,16 @@
 
         </div>
 
+    </div>
+
+    <!-- Floating GitHub Links -->
+    <div class="floating-links">
+        <a href="https://github.com/MahmudulHasn" target="_blank" class="floating-item"> Contributor
+            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo">
+        </a>
+        <a href="https://github.com/UIU-Developers-Hub" target="_blank" class="floating-item"> UIUDH Org: 
+            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo">
+        </a>
     </div>
 
     <!-- javascript link  -->
