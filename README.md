@@ -1,4 +1,4 @@
-# Morse Code Translator - [learn-morse](https://learn-morse.pages.dev)
+# Morse Code Translator - [learn-morse](https://play-morse.pages.dev)
 
 ## Overview
 
