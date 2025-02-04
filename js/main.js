@@ -83,7 +83,7 @@ spacebarButton.addEventListener("touchstart", function () {
 spacebarButton.addEventListener("touchend", function () {
     let duration = Date.now() - startTime;  // Measure the duration of the button press
     startTime = null;  // Reset the start time
-    morseInput = duration < 300 ? "." : "-";  // Append a dot or dash based on the duration of the press
+    morseInput += duration < 300 ? "." : "-";  // Append a dot or dash based on the duration of the press
     morseDiv.innerText = morseInput;  // Update the Morse input display
     updateSuggestion();  // Update suggestion for the current Morse input
     
